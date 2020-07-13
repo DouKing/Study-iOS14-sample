@@ -16,7 +16,7 @@ struct ContentView: View {
                         Text("Navigate")
                     }
 
-                    NavigationLink(destination: ProfileView(), label: {
+                    NavigationLink(destination: ProfileView(name: "John"), label: {
                         Text("Navigate")
                     })
                 }
@@ -27,18 +27,11 @@ struct ContentView: View {
                 Text("Home")
             }
 
-            NavigationView {
-                List {
-                    NavigationLink(destination: HomeView()) {
-                        Text("Navigate")
-                    }
+            ProfileView(name: "John")
+                .tabItem {
+                    Text("Profile")
+                    Image(systemName: "person")
                 }
-                .navigationTitle("Profile")
-            }
-            .tabItem {
-                Text("Profile")
-                Image(systemName: "person")
-            }
         }
     }
 }

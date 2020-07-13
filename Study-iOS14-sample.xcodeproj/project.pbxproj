@@ -25,6 +25,8 @@
 		00C7A5D724AADA1B001F7B93 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7A5D524AADA1B001F7B93 /* HomeView.swift */; };
 		00C7A5D924AADA35001F7B93 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7A5D824AADA35001F7B93 /* ProfileView.swift */; };
 		00C7A5DA24AADA35001F7B93 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7A5D824AADA35001F7B93 /* ProfileView.swift */; };
+		00C7A5DD24ACA722001F7B93 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7A5DC24ACA722001F7B93 /* ProfileViewController.swift */; };
+		00C7A5DE24ACA728001F7B93 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7A5DC24ACA722001F7B93 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,7 @@
 		00C7A5CC24AA006B001F7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C7A5D524AADA1B001F7B93 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00C7A5D824AADA35001F7B93 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		00C7A5DC24ACA722001F7B93 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 				00C7A50C24A877AC001F7B93 /* ContentView.swift */,
 				00C7A5D524AADA1B001F7B93 /* HomeView.swift */,
 				00C7A5D824AADA35001F7B93 /* ProfileView.swift */,
+				00C7A5DC24ACA722001F7B93 /* ProfileViewController.swift */,
 				00C7A50D24A877AF001F7B93 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -412,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7A5DD24ACA722001F7B93 /* ProfileViewController.swift in Sources */,
 				00C7A5D924AADA35001F7B93 /* ProfileView.swift in Sources */,
 				00C7A5D624AADA1B001F7B93 /* HomeView.swift in Sources */,
 				00C7A53624A877AF001F7B93 /* ContentView.swift in Sources */,
@@ -423,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7A5DE24ACA728001F7B93 /* ProfileViewController.swift in Sources */,
 				00C7A5DA24AADA35001F7B93 /* ProfileView.swift in Sources */,
 				00C7A5D724AADA1B001F7B93 /* HomeView.swift in Sources */,
 				00C7A53724A877AF001F7B93 /* ContentView.swift in Sources */,

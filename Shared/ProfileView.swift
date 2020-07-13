@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ProfileView: View {
+    var name: String
+
     var body: some View {
-        Text("Hello, World!")
+        ProfileRepresent(name: name)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Profile")
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(name: "John")
     }
 }
