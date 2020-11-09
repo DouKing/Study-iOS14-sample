@@ -11,12 +11,16 @@ import SwiftUI
 struct Provider: TimelineProvider {
     public typealias Entry = SimpleEntry
 
-    public func snapshot(with context: Context, completion: @escaping (SimpleEntry) -> ()) {
+	public func placeholder(in context: Context) -> SimpleEntry {
+		SimpleEntry(date: Date())
+	}
+
+    public func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date())
         completion(entry)
     }
 
-    public func timeline(with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    public func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -143,13 +147,13 @@ struct CafeineDrinkWidgetEntryView : View {
 struct CafeineDrinkWidget: Widget {
     private let kind: String = "CafeineDrinkWidget"
 
-    public var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider(), placeholder: PlaceholderView()) { entry in
-            CafeineDrinkWidgetEntryView(entry: entry, data: .previewData)
-        }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
-    }
+	public var body: some WidgetConfiguration {
+		StaticConfiguration(kind: kind, provider: Provider()) { entry in
+			CafeineDrinkWidgetEntryView(entry: entry, data: .previewData)
+		}
+		.configurationDisplayName("My Widget")
+		.description("This is an example widget.")
+	}
 }
 
 struct CafeineDrinkWidget_Previews: PreviewProvider {
